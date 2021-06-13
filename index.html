@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Frontend Developer form</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./css/selectize.css" />
+  </head>
+  <body>
+    <h1>Frontend Developer Form</h1>
+    <form class="form-container">
+      <label class="form-label"
+        >Имя<span class="form-lable_star">*</span></label
+      >
+      <input
+        type="text"
+        class="form-input"
+        data-input
+        id="firstName"
+        placeholder="Карл"
+        required
+      />
+
+      <label class="form-label"
+        >Фамилия<span class="form-lable_star">*</span></label
+      >
+      <input
+        type="text"
+        class="form-input"
+        data-input
+        id="lastName"
+        placeholder="Йоханcен"
+        required
+      />
+
+      <label class="select-label"
+        >День рождения<span class="form-lable_star">*</span></label
+      >
+      <input type="text" class="dateOfBirth" id="datepicker" data-input />
+
+      <label for="selectTwo" class="select-label"
+        >Технологии<span class="form-lable_star">*</span></label
+      >
+      <select
+        name="example"
+        placeholder="Выберите технологию"
+        id="framework"
+        class="framework"
+        data-input
+      >
+        <option value="choose">Выберите технологию</option>
+        <option value="angular">Angular</option>
+        <option value="react">React</option>
+        <option value="vue">Vue</option>
+      </select>
+
+      <label for="selectTwo" class="select-label"
+        >Версия фреймворка<span class="form-lable_star">*</span></label
+      >
+      <select
+        name="example"
+        placeholder="Выберите версию"
+        id="frameworkVersion"
+        class="frameworkVersion"
+        data-input
+      >
+        <option value="choose">Выберите версию</option>
+        <option value="Angular" disabled>Angular</option>
+        <option value="1.1.1">1.1.1</option>
+        <option value="1.2.1">1.2.1</option>
+        <option value="1.3.3">1.3.3</option>
+        <option value="React" disabled>React</option>
+        <option value="2.1.2">2.1.2</option>
+        <option value="3.2.4">3.2.4</option>
+        <option value="4.3.1">4.3.1</option>
+        <option value="React" disabled>React</option>
+        <option value="3.3.1">3.3.1</option>
+        <option value="5.2.1">5.2.1</option>
+        <option value="5.1.3">5.1.3</option>
+      </select>
+
+      <label class="form-label"
+        >E-mail<span class="form-lable_star">*</span></label
+      >
+      <input
+        type="email"
+        class="form-input email"
+        placeholder="example@example."
+        data-input
+        id="email"
+        required
+      />
+
+      <label class="form-label"
+        >Хобби<span class="form-lable_star">*</span></label
+      >
+      <input
+        type="text"
+        class="form-input hobby"
+        placeholder="write it"
+        data-input
+        id="hobby"
+        required
+      />
+
+      <button class="btn btn-primary" type="submit">Submit</button>
+
+      <div class="json"></div>
+    </form>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script src="./js/selectize.js"></script>
+    <script src="./js/selectize.min.js"></script> -->
+
+    <script>
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
+  </body>
+</html>

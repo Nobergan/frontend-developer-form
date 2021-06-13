@@ -1,0 +1,159 @@
+.form-container {
+  display: flex;
+  margin-left: 60px;
+  flex-direction: column;
+}
+
+.select label {
+  margin-bottom: 5px;
+}
+
+.form-container select {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 10px;
+  /* padding: 0 0 0 12px; */
+  border: 1px solid silver;
+  border-radius: 2px;
+}
+
+.form label {
+  margin-bottom: 5px;
+}
+
+.form-lable_star {
+  color: red;
+}
+
+.form-container input {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 10px;
+  border: 1px solid silver;
+  border-radius: 2px;
+}
+
+.form-container button {
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+/* SELECTIZE */
+
+.select-default-search label {
+  font-family: "Font-Bold";
+  font-size: 10px;
+  line-height: 13px;
+  color: #525f6b;
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 13px;
+}
+
+.select-default-search {
+  position: relative;
+}
+
+.select-default-search .selectize-input {
+  min-width: 215px;
+  padding: 20px 13px 9px 13px;
+  border: none;
+  border-bottom: 1px solid #bfc0c2;
+  border-radius: 0;
+  box-shadow: none !important;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 8.5L12 16L19.5 8.5' stroke='black' stroke-miterlimit='10'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.select-default-search .selectize-input > input::placeholder {
+  color: #999999;
+}
+
+.select-default-search .selectize-input > input {
+  font-family: "Font-Light";
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.selectize-input .item {
+  font-family: "Font-Light";
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #000000;
+
+  caret-color: #008ecf;
+}
+
+.selectize-input input:focus {
+  caret-color: #008ecf;
+}
+
+.select-default-search .selectize-input input {
+  min-width: fit-content;
+}
+
+.select-default-search .selectize-input.has-items input {
+  min-width: auto;
+}
+
+.select-default-search .selectize-input.dropdown-active {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.5 15.5L12 8L4.5 15.5' stroke='black' stroke-miterlimit='10'/%3E%3C/svg%3E%0A");
+  background-color: #efeff0 !important;
+}
+
+.selectize-control.single .selectize-input:after,
+.selectize-control.single .selectize-input:before {
+  display: none !important;
+}
+
+.select-default-search .option {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  height: 48px;
+  font-family: "Font-Light";
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000 !important;
+}
+
+/*.select-default-search .option.active {*/
+/*    color: #000000!important;*/
+/*    background-color: #005691!important;*/
+/*}*/
+
+.select-default-search .option:hover {
+  color: #ffffff !important;
+  background-color: #005691 !important;
+}
+
+.select-default-search .option.selected {
+  box-shadow: none !important;
+}
+
+.selectize-dropdown-content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #dbe0e8;
+}
+
+.selectize-dropdown-content::-webkit-scrollbar {
+  width: 3px;
+  background-color: #dbe0e8;
+}
+
+.selectize-dropdown-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  width: 1px;
+  background-color: #5b7293;
+}
+
+.selectize-dropdown {
+  box-shadow: none !important;
+  border: 1px solid #bfc0c2 !important;
+  border-radius: 0 !important;
+}
